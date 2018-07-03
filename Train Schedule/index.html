@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Train Schedule</title>
+    <link rel="stylesheet" type="text/css" href"reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="train.css">
+</head>
+<body>
+<div class="container">
+<div class="jumbotron">
+    <h1> Train Tracker Reference </h1>
+
+</div>
+        <div id="tableBorder">
+        <div id="tableHeader"><p> Current Train Schedule</p></div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>                   
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Amtrak</td>
+                        <td> Atlanta</td>
+                        <td>30</td>
+                        <td>15:49</td>
+                        <td>11</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="tableHeader"><p> Add A Train</p></div>
+
+        <div class="time"><p>Current Time</p><span id="currentTime"></span></div>
+
+        <form>
+            <div class="row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <form id="newEmployeeForm">
+                    <div class="form-grou">
+                        <label>Train Name</label>
+                        <input type="text" id="trainName" class="form-control" placeholder="Ex Amtrak, BNSF Railway, Canadian National, etc">
+                    </div>
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <input type="text" id="destination" class="form-control" placeholder="Ex. New York, Washington D.C, Philadelphia, etc">
+                    </div>
+                    <div class="form-group">
+                        <label> First Train Time (HH:mm - Military Time</label>
+                        <input type="text" id="firstTrain" class="form-control" placeholder="01:00-23:99">
+                    </div>
+                    <div class="form-group">
+                        <label>Frequency (Minutes)</label>
+                        <input type="text" id="frequency" class="form-control" placeholder="30">
+                    </div>
+                    <div class="form-group text center">
+                        <buttom class="btn btn-primary" id="submit">
+                            Submit
+                        </buttom>
+                    </div>
+                </form>
+            </div>
+        </form>    
+    </div>
+</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+
+<script type="text/javascript" src="train.js"></script>
+</body>
+</html>

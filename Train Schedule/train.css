@@ -1,0 +1,35 @@
+p
+{
+	font-size: 18px;
+	color: rgb(146, 17, 197);
+	margin-left: 10px;
+}
+
+.jumbotron
+{
+	text-align: center;
+}
+
+#tableHeader
+{
+	margin-top: 20px;
+	background-color: #33b749;
+}
+
+
+
+#tableBorder
+{
+	border-left: 2px solid lightblue;
+	border-right: 2px solid lightblue;
+	border-bottom: 2px solid lightblue;
+}
+
+.time
+{
+	border-radius: 5px;
+	font-size: 25px;
+	width: 120px;
+	background-color: #f9f9fa;
+	text-align: center;
+}
